@@ -1,0 +1,199 @@
+/* Global styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Typography */
+h3 {
+  font-size: 2rem;
+  color: inherit;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
+  color: inherit;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+button,
+.MuiButton-root {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+  text-transform: none;
+  display: inline-block;
+}
+
+button:hover,
+.MuiButton-root:hover {
+  background-color: #0056b3;
+}
+
+/* Button container */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.MuiGrid-root {
+  margin-top: 20px;
+}
+
+/* Card Styles */
+.MuiCard-root {
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+body.dark .MuiCard-root {
+  background-color: #1e1e1e;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Date Styling */
+.task-date {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 5px;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+/* Task Form */
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.task-form .MuiTextField-root {
+  width: 100%;
+}
+
+/* Task Form - Fix Date Field Overlap */
+.MuiFormControl-root {
+  margin-bottom: 15px; /* Add spacing between form fields */
+}
+
+.MuiFormLabel-root {
+  font-size: 1rem;
+  color: inherit;
+}
+
+.MuiTextField-root .MuiInputBase-root {
+  font-size: 1rem;
+}
+
+/* Task List Styles */
+.task-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.task-card {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: inherit;
+}
+
+/* Hover Effects for Task Cards */
+.MuiCard-root:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .MuiGrid-root {
+    margin-top: 10px;
+  }
+
+  .MuiButton-root {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  .MuiCard-root {
+    padding: 15px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .MuiCard-root {
+    padding: 10px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .MuiButton-root {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+}
+
+/* Dialog Styles */
+.MuiDialog-root {
+  padding: 20px;
+}
+
+.MuiDialogTitle-root {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.MuiDialogContent-root {
+  padding: 10px 0;
+}
+
+.MuiDialogActions-root {
+  padding: 10px 0;
+}

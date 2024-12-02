@@ -1,0 +1,31 @@
+/* src/styles.css */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f6f9;
+  transition: background-color 0.3s ease;
+}
+
+/* Dark Mode Styles */
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.MuiButton-root {
+  margin-right: 10px;
+}
+
+.MuiGrid-root {
+  margin-top: 20px;
+}
+
+.MuiCard-root {
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.MuiTypography-root {
+  color: inherit; /* Ensure text color adjusts with theme */
+}
