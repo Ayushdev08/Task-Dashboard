@@ -1,115 +1,70 @@
-Task Management Web Application
+Task Management App
 
-Overview
-
-This project is a task management web application built using ReactJS, Material-UI (MUI), and Redux for state management. The application allows users to add, edit, and manage tasks efficiently. It also includes features such as notifications for task reminders based on the due date.
-
-This application was created as part of an assignment for the Front-End Development Internship at Brand Kiln. The goal of the project was to demonstrate skills in building modern web applications using ReactJS and to showcase proficiency in state management, form handling, and responsive design.
+This is a Task Management App built using React.js and Redux for state management. The application allows users to add, edit, and delete tasks, set reminders for tasks, and manage them through a simple user interface. It supports dark mode and is responsive for various screen sizes.
 
 Features
 
-Add, Edit, and Delete Tasks: Users can create new tasks, modify existing ones, and delete tasks.
-Due Date Reminders: When adding a task, the user can set a due date. If the task’s due date is approaching, the user will receive a browser notification.
-Responsive Design: The application is fully responsive, ensuring usability on both desktop and mobile devices.
-Dark Mode Support: The app supports a dark mode that changes the background color and text color for better readability in low-light environments.
+Add, Edit, Delete Tasks: Create, update, and remove tasks from the list.
+Task Reminders: Set reminders for tasks, and get notifications when the due time is reached.
+Dark Mode: Switch between light and dark themes for improved user experience.
+Responsive Design: Optimized layout for desktop, tablet, and mobile screens.
+Material UI: The app uses Material UI components for a modern look and feel.
 Technologies Used
 
-ReactJS: A JavaScript library for building user interfaces.
-Material-UI: A popular React UI framework used for building modern, responsive, and accessible web applications.
-Redux: A state management library to manage the global state of the application.
-React Router: Used for handling navigation within the app.
-CSS: For styling the components, including media queries for responsiveness.
-Setup and Installation
+Frontend: React.js, Redux, Material-UI, CSS
+State Management: Redux for task management
+Date & Time: DateTime picker for setting due dates
+Notifications: Browser notifications for task reminders
+Installation
 
 Prerequisites
-Make sure you have the following installed:
+Make sure you have the following installed on your machine:
 
-Node.js (>= 14.x.x) - Download from nodejs.org
-npm (comes with Node.js) or Yarn - Package managers for handling dependencies
-Installation Steps
+Node.js: Download and install Node.js
+npm (comes with Node.js)
+Steps to Set Up
 Clone the repository:
-git clone https://github.com/your-username/task-management-app.git
-cd task-management-app
+git clone https://github.com/yourusername/task-manager-app.git
+cd task-manager-app
 Install dependencies:
-If you are using npm:
+Run the following command to install all required dependencies:
 
 npm install
-If you are using Yarn:
-
-yarn install
-Run the application:
-Start the development server by running the following command:
+Start the development server:
+After the dependencies are installed, start the app:
 
 npm start
-This will start the app at http://localhost:3000.
+Open the app in your browser at http://localhost:3000.
+How to Use
+
+Adding a Task:
+Click on "Add New Task" button.
+Enter the Title, Description, and set a Due Date.
+Click "Add Task" to save the task.
+Editing a Task:
+Click on a task from the list.
+Edit the title, description, and due date, then click "Save Changes".
+Deleting a Task:
+Click on the delete icon on the task card to remove the task.
+Reminder Notifications:
+Once a task's due date arrives, you will receive a browser notification if it is set.
+Dark Mode:
+Toggle dark mode by clicking the switch button on the top right corner.
 Screenshots
 
-Here are some screenshots of the application in action:
+Home Page
+Add Task Form
+(public/Screenshot 2024-12-02 at 2.37.54 PM.png)
+Task List 
+(public/Screenshot 2024-12-02 at 2.29.01 PM.png)
+Dark Mode 
+(public/Screenshot 2024-12-02 at 2.28.39 PM.png)
 
-1. Task List View 
-The desktop view of the task list showing tasks and action buttons for editing and deleting.
+Contributing
 
-2. Add New Task Form 
-The form for adding a new task, including title, description, and due date fields.
+If you would like to contribute to this project, feel free to fork the repository and submit a pull request with your improvements or fixes.
 
-3. Dark Mode
-The app in dark mode, showing the task list and form with dark background and light text.
+License
 
-Folder Structure
-
-/task-management-app
-
-  ├── /public
-  │   └── index.html
-  ├── /src
-  │   ├── /components
-  │   │   ├── TaskForm.js
-  │   │   ├── TaskList.js
-  │   │   └── TaskCard.js
-  │   ├── /redux
-  │   │   └── taskSlice.js
-  │   ├── App.js
-  │   ├── index.js
-  │   └── styles.css
-  ├── package.json
-  ├── README.md
-  └── .gitignore
-
-/public: Contains static files like index.html.
-/src: Contains the main application code, including components and styles.
-/redux: Contains the Redux slice for managing tasks.
-App.js: The main React component, which renders the task management functionality.
-styles.css: Custom styles for the application, including responsive design.
-Key Features Implementation
-
-1. Task Form
-Add New Task: Users can fill in the task title, description, and due date to create a new task.
-Edit Existing Task: If a task is selected for editing, the fields will be populated with the current task’s data.
-Validation: Form fields are required before submission to ensure all necessary information is provided.
-2. Task List
-Displays a list of tasks with the ability to edit or delete each task.
-Tasks are displayed in a responsive grid layout, adapting based on screen size.
-3. Due Date Reminders
-A reminder notification is triggered when the task’s due date approaches, based on the user's browser notification permissions.
-The application calculates the difference between the current time and the task's due time, then triggers a browser notification at the specified reminder time.
-Challenges & Learnings
-
-Handling Form State: One of the key challenges was managing form state using React hooks (useState), especially when editing existing tasks. I utilized the useEffect hook to pre-populate the form when editing a task.
-Browser Notifications: Implementing the browser notifications required working with the browser’s Notification API and managing the time difference between the current time and the task’s due date.
-Responsive Design: Ensuring that the app is responsive on both large and small screens was important, and I used Material-UI’s grid system and media queries to achieve this.
-
-Future Enhancements
-
-Authentication: Implementing user authentication using JWT or Firebase so that users can sign in and access their tasks across devices.
-
-Task Categories: Implementing categories for tasks to organize them better (e.g., Work, Personal).
-
-Conclusion
-
-This task management web application demonstrates my skills in ReactJS, Redux, and responsive design. I hope to continue improving my front-end development skills and look forward to contributing to the team at Brand Kiln as a Front-End Development Intern.
-
-Contact Information
-Name: Ayush Varma
-GitHub: github.com/Ayushdev08
-LinkedIn: www.linkedin.com/in/ayush-varma-55b09b24b
+This project is open source and available under the MIT License.
 
