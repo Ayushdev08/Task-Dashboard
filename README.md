@@ -5,10 +5,15 @@ This is a Task Management App built using React.js and Redux for state managemen
 Features
 
 Add, Edit, Delete Tasks: Create, update, and remove tasks from the list.
+
 Task Reminders: Set reminders for tasks, and get notifications when the due time is reached.
+
 Dark Mode: Switch between light and dark themes for improved user experience.
+
 Responsive Design: Optimized layout for desktop, tablet, and mobile screens.
+
 Material UI: The app uses Material UI components for a modern look and feel.
+
 Technologies Used
 
 Frontend: React.js, Redux, Material-UI, CSS
@@ -31,10 +36,12 @@ Run the following command to install all required dependencies:
 
 npm install
 Start the development server:
+
 After the dependencies are installed, start the app:
 
 npm start
 Open the app in your browser at http://localhost:3000.
+
 How to Use
 
 Adding a Task:
@@ -54,11 +61,11 @@ Screenshots
 
 Home Page
 Add Task Form
-(screenshots/main.png)
+(main.png)
 Task List 
-(Screenshot/form.png)
+(form.png)
 Dark Mode 
-(Screenshot/dark-mode.png)
+(dark-mode.png)
 
 Contributing
 
