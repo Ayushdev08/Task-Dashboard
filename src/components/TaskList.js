@@ -1,7 +1,6 @@
-// src/components/TaskList.js
-import React, { useEffect, useState } from 'react';
+import React from 'react'; // Removed 'useEffect' and 'useState' imports since they are not used
 import { useDispatch, useSelector } from 'react-redux';
-import { deleteTask, toggleTaskCompletion, setFilter, setSearch, reorderTasks, editTask } from '../redux/ taskSlice';
+import { deleteTask, toggleTaskCompletion, setFilter, setSearch, reorderTasks } from '../redux/ taskSlice'; // Removed 'editTask' since it's not used
 import { Grid, Card, Button, Typography, TextField } from '@mui/material';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 
