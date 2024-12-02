@@ -54,11 +54,11 @@ Screenshots
 
 Home Page
 Add Task Form
-(public/Screenshot 2024-12-02 at 2.37.54 PM.png)
+(screenshots/main.png)
 Task List 
-(public/Screenshot 2024-12-02 at 2.29.01 PM.png)
+(Screenshot/form.png)
 Dark Mode 
-(public/Screenshot 2024-12-02 at 2.28.39 PM.png)
+(Screenshot/dark-mode.png)
 
 Contributing
 
